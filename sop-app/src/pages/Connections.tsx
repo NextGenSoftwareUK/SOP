@@ -586,7 +586,7 @@ export function Connections() {
                   </span>
                   {e.connector}
                 </span>
-                <span style={{ fontSize: '0.85rem', color: '#888', fontFamily: 'var(--font-mono)', fontSize: '0.78rem' as never }}>{e.action.replace(/_/g, ' ')}</span>
+                <span style={{ color: '#888', fontFamily: 'var(--font-mono)', fontSize: '0.78rem' }}>{e.action.replace(/_/g, ' ')}</span>
                 <span style={{ fontSize: '0.85rem', color: e.matched ? '#C0C0C0' : '#383838', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', paddingRight: 12 }}>
                   {e.matched && e.stepName ? (
                     <span style={{ display: 'flex', alignItems: 'center', gap: 5 }}>

@@ -51,7 +51,7 @@ const TD = { padding: '11px 18px', fontSize: '0.82rem' }
 
 export function SOPIntel() {
   const [sop, setSop] = useState(SOPS[0])
-  const [queue, setQueue] = useState(AI_QUEUE)
+  const [queue, setQueue] = useState<{ id: number; step: string; suggestion: string; impact: string; accepted: boolean | null }[]>(AI_QUEUE)
   const maxDev = Math.max(...STEPS.map(s => s.deviations))
 
   return (
